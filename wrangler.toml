@@ -1,0 +1,15 @@
+name = "cloudnav"
+compatibility_date = "2026-06-12"
+
+[pages]
+build_command = "npm install && npm run build"
+dist_dir = "dist"
+
+[vars]
+# 请在 Cloudflare Dashboard 中设置 PASSWORD 环境变量
+# PASSWORD = "your_password"
+
+[[kv_namespaces]]
+binding = "CLOUDNAV_KV"
+id = "REPLACE_WITH_PRODUCTION_KV_ID"
+preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
